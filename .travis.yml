@@ -11,6 +11,7 @@ sudo: required
 # Instalação de Módulos que são necessários para a Aplicação.
 install:
   - pip install flask
+  
 
 # Defini o script de Teste que deve rodar toda vez que o código for alterado.
 script:
@@ -19,6 +20,6 @@ script:
 # Defini que o processo de Deploy será na Plataforma Heroku. É necessário informar o nome da APP criada no Heroku
 deploy:
   provider: heroku
-  api-key: 2302e12a-9b37-46f7-87ae-6459b7090d0e
+  api-key: 
     secure: $HEROKU_API_KEY
   app: devops-labs1
